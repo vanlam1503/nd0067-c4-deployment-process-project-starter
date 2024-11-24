@@ -26,4 +26,4 @@ const components = [...entryComponents];
   exports: components,
   providers: []
 })
-export class AuthModule {}
+export class AuthModule { }

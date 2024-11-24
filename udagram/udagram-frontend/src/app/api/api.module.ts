@@ -12,4 +12,4 @@ const components = [];
   exports: components,
   providers: []
 })
-export class ApiModule {}
+export class ApiModule { }
