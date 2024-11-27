@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "description": "",
   "engines": {
-    "node": "18.20.5"
+    "node": "18.20.5",
+    "npm": "10.8.2"
   },
   "main": "server.ts",
   "scripts": {
