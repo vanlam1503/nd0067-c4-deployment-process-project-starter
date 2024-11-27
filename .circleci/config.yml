@@ -10,6 +10,7 @@ jobs:
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
+    resource_class: large
     steps:
       # install node and checkout code
       - node/install:
@@ -25,6 +26,7 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
+          timeout: 30m
       - run:
           name: Install API Dependencies
           command: |
