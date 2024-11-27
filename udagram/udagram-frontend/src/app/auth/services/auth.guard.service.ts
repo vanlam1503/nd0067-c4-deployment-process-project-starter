@@ -25,5 +25,4 @@ export class AuthGuardService implements CanActivate {
 
     return this.auth.currentUser$.value !== null;
   }
-
 }
