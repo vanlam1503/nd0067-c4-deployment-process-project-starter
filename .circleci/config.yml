@@ -74,9 +74,6 @@ jobs:
       - run:
           name: Setup the aws bucket and send to EB
           command: eb setenv AWS_BUCKET=arn:aws:s3:::mybucket974410881372 --environment udagram-api-env01
-      - run:
-          name: Setup the jwt secret and send to EB
-          command: eb setenv JWT_SECRET=mysecretstring --environment udagram-api-env01
 
       - run:
           name: Deploy App
