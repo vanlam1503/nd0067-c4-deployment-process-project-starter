@@ -32,8 +32,14 @@ npm run start
 Screen shot for Circle CI, AWS RDS, AWS ElasticBeanstalk, AWS S3 are saved in this [screenshots](./screenshots) folder
 
 ### 5. Docs
+- An architecture diagrame of infrastructure ath [here](./docs/architecture_diagram.png). 
+- [Infrastructure description](./docs/infrastructure_description.md).
+- Pipeline include [diagram](./docs/pipeline_diagram.png) and [description](./docs/pipeline_description.md)
 
-## Webpage:
+### 6. App dependencies
+- [Some necessary dependencies](./docs/application_dependencies.md)
+
+### 7. Webpage:
 Please view application at [here](http://mybucket974410881372.s3-website-us-east-1.amazonaws.com/home)
 
 ## 
