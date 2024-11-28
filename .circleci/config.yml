@@ -65,16 +65,8 @@ jobs:
       - run:
           name: Setup the secrets and them to EB
           command: |
-            eb setenv \
-              POSTGRES_USERNAME=postgres \
-              POSTGRES_PASSWORD=postgres \
-              POSTGRES_HOST=database1.cofjg5owxo35.us-east-1.rds.amazonaws.com \
-              POSTGRES_DB=postgres \
-              AWS_BUCKET=arn:aws:s3:::mybucket974410881372 \
-              AWS_PROFILE=default \
-              JWT_SECRET=mysecretstring \
-              URL=http://localhost:8100 \
-              --environment udagram-api-env01
+            eb setenv POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_HOST=database1.cofjg5owxo35.us-east-1.rds.amazonaws.com POSTGRES_DB=postgres AWS_BUCKET=arn:aws:s3:::mybucket974410881372
+ AWS_PROFILE=default JWT_SECRET=mysecretstring URL=http://localhost:8100 NODE_OPTIONS=--openssl-legacy-provider —environment udagram-api-env01
       - run:
           name: Deploy App
           command: |
