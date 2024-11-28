@@ -40,6 +40,6 @@ Screen shot for Circle CI, AWS RDS, AWS ElasticBeanstalk, AWS S3 are saved in th
 - [Some necessary dependencies](./docs/application_dependencies.md)
 
 ### 7. Webpage:
-Please view application at [here](http://mybucket974410881372.s3-website-us-east-1.amazonaws.com/home)
+Please view application at [here](http://mybucket974410881372.s3-website-us-east-1.amazonaws.com)
 
 ## 

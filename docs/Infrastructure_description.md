@@ -20,5 +20,5 @@ POSTGRES_USERNAME = postgres
 
 ### 3. S3 bucket
 - AWS Region: us-east-1
-- Bucket website endpoint: http://mybucket974410881372.s3-website-us-east-1.amazonaws.com/home
+- Bucket website endpoint: http://mybucket974410881372.s3-website-us-east-1.amazonaws.com
 
