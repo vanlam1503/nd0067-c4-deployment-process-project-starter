@@ -63,17 +63,24 @@ jobs:
           command: |
             printf "n\n" | eb init udagram-api --region us-east-1
       - run:
-          name: Setup POSTGRES_USERNAME and them to EB
+          name: Setup POSTGRES_USERNAME and send to EB
           command: eb setenv POSTGRES_USERNAME=postgres --environment udagram-api-env01
       - run:
-          name: Setup the posgres password and them to EB
+          name: Setup the posgres password and send to EB
           command: eb setenv POSTGRES_PASSWORD=postgres --environment udagram-api-env01
       - run:
-          name: Setup the host and them to EB
+          name: Setup the host and send to EB
           command: eb setenv POSTGRES_HOST=database1.cofjg5owxo35.us-east-1.rds.amazonaws.com --environment udagram-api-env01              
       - run:
-          name: Setup the aws bucket and them to EB
+          name: Setup the aws bucket and send to EB
           command: eb setenv AWS_BUCKET=arn:aws:s3:::mybucket974410881372 --environment udagram-api-env01
+      - run:
+          name: Setup the aws profile and send to EB
+          command: eb setenv AWS_PROFILE=default --environment udagram-api-env01
+      - run:
+          name: Setup the jwt secret and send to EB
+          command: eb setenv JWT_SECRET=mysecretstring --environment udagram-api-env01
+
       - run:
           name: Deploy App
           command: |
