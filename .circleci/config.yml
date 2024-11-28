@@ -59,6 +59,10 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+          name: Setup EB applications
+          command: |
+            eb init udagram-api --region us-east-1
+      - run:
           name: Setup the secrets and them to EB
           command: |
             eb setenv \
