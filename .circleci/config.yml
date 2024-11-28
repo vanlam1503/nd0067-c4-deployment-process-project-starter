@@ -61,7 +61,7 @@ jobs:
       - run:
           name: Setup EB applications
           command: |
-            eb init udagram-api --region us-east-1
+            printf "n\n" | eb init udagram-api --region us-east-1
       - run:
           name: Setup the secrets and them to EB
           command: |
